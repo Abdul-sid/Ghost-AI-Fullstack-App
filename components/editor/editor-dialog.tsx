@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
 
 import {
   Dialog,
@@ -21,6 +21,11 @@ interface EditorDialogProps {
   footer?: ReactNode;
   /** Dialog body. Optional — confirmation dialogs need none. */
   children?: ReactNode;
+  /**
+   * Element focused when the dialog opens, forwarded to the dialog popup.
+   * Defaults to the popup's own focus handling when omitted.
+   */
+  initialFocus?: ComponentProps<typeof DialogContent>["initialFocus"];
   className?: string;
 }
 
@@ -35,11 +40,13 @@ export function EditorDialog({
   description,
   footer,
   children,
+  initialFocus,
   className,
 }: EditorDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
+        initialFocus={initialFocus}
         className={cn(
           "rounded-3xl border border-surface-border bg-elevated text-copy-primary ring-0 sm:max-w-md",
           className

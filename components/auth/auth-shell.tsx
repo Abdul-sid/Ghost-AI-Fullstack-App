@@ -50,7 +50,7 @@ export function AuthShell({ children, className }: AuthShellProps) {
         <div className="relative flex flex-1 flex-col">
           <div className="flex items-center gap-3">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand">
-              <Ghost className="h-5 w-5 text-base" aria-hidden />
+              <Ghost className="h-5 w-5 text-primary-foreground" aria-hidden />
             </span>
             <span className="text-lg font-semibold tracking-tight text-copy-primary">
               Ghost AI
