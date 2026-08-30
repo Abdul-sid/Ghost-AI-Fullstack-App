@@ -1,5 +1,0 @@
-When I am signing in via clerk, everything is working fine. But I am getting below error logs in terminal:
-
- GET / 307 in 48ms (next.js: 4ms, proxy.ts: 7ms, application-code: 37ms)
- GET /editor 200 in 37ms (next.js: 2ms, proxy.ts: 6ms, application-code: 29ms)
-[browser] Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview (https://excited-cod-8364.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js:12:7821)
