@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"plans": {
+		"progress-tracker": {
+			"slug": "progress-tracker",
+			"title": "Progress Tracker",
+			"sourcePath": "/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/context/progress-tracker.md",
+			"addedAt": "2026-08-30T14:42:41.223Z",
+			"updatedAt": "2026-08-30T14:42:41.223Z",
+			"commitHash": null
+		}
+	}
+}

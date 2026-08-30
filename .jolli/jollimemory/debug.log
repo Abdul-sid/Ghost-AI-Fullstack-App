@@ -81,3 +81,122 @@
 [2026-08-30T13:58:36.874Z] INFO  [Installer] Checking Jolli Memory status
 [2026-08-30T13:58:37.065Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
 [2026-08-30T14:26:58.483Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:33:35.489Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-30T14:33:35.501Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=9145, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:33:35.514Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-30T14:33:36.060Z] INFO  [RepoProfile] [trace=d2129f9f8516c1237b3da462cdf66d4d] manual-disable read → false (by=manuallyDisabled, pid=9151, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:33:36.067Z] INFO  [PostCommitHook] [trace=d2129f9f8516c1237b3da462cdf66d4d] Detected operation: commit
+[2026-08-30T14:33:36.078Z] INFO  [PostCommitHook] [trace=d2129f9f8516c1237b3da462cdf66d4d] Enqueued: type=commit hash=a9c348dd
+[2026-08-30T14:33:36.078Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Launching background worker
+[2026-08-30T14:33:36.079Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Background worker spawned (PID: 9161)
+[2026-08-30T14:33:36.086Z] WARN  [CutoverRouter] [trace=d2129f9f8516c1237b3da462cdf66d4d] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:33:36.188Z] INFO  [RepoProfile] [trace=d2129f9f8516c1237b3da462cdf66d4d] manual-disable read → false (by=manuallyDisabled, pid=9161, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:33:36.207Z] WARN  [CutoverRouter] [trace=d2129f9f8516c1237b3da462cdf66d4d] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:33:36.210Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] === Queue worker started === node=20.16.0 kind=vscode-plugin source=vscode pkgVer=0.99.16 cliVer=0.99.16 dist=/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist
+[2026-08-30T14:33:36.217Z] WARN  [CutoverRouter] [trace=d2129f9f8516c1237b3da462cdf66d4d] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:33:36.217Z] INFO  [StorageFactory] [trace=d2129f9f8516c1237b3da462cdf66d4d] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T14:33:36.240Z] INFO  [HermesDiscoverer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Hermes support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.245Z] INFO  [CursorDetector] [trace=d2129f9f8516c1237b3da462cdf66d4d] Cursor support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.246Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Processing queue entry: type=commit hash=a9c348dd
+[2026-08-30T14:33:36.256Z] INFO  [GitOps] [trace=d2129f9f8516c1237b3da462cdf66d4d] Commit a9c348dd: first commit
+[2026-08-30T14:33:36.256Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Commit: a9c348dd - first commit (7ms)
+[2026-08-30T14:33:36.258Z] INFO  [OpenCodeDiscoverer] [trace=d2129f9f8516c1237b3da462cdf66d4d] OpenCode support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.258Z] INFO  [CursorDetector] [trace=d2129f9f8516c1237b3da462cdf66d4d] Cursor support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.258Z] INFO  [CopilotDetector] [trace=d2129f9f8516c1237b3da462cdf66d4d] Copilot CLI support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.270Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Discovered 1 Copilot Chat session(s)
+[2026-08-30T14:33:36.270Z] INFO  [DevinDiscoverer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Devin support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.270Z] INFO  [AntigravityDetector] [trace=d2129f9f8516c1237b3da462cdf66d4d] Antigravity support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.270Z] INFO  [HermesDiscoverer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Hermes support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:33:36.271Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Seeding first read of 684585d1-9ea6-47fc-85de-05d7bfc03022 from owner line 3
+[2026-08-30T14:33:36.281Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Transcript source: session=684585d1-9ea6-47fc-85de-05d7bfc03022, lines=3→53, entries=2
+[2026-08-30T14:33:36.283Z] WARN  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Transcript source read to zero conversation entries: source=copilot-chat path=/Users/abdurrehmansiddiqui/Library/Application Support/Code/User/workspaceStorage/5f0498840ff63dbb5ce9883cb33209b7/chatSessions/321398b0-ffd0-4ae6-a723-38af4cd487ff.jsonl lines=0→0 unrecognizedRows=0
+[2026-08-30T14:33:36.283Z] WARN  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Not advancing read cursor: source recognized nothing in consumed lines: source=copilot-chat path=/Users/abdurrehmansiddiqui/Library/Application Support/Code/User/workspaceStorage/5f0498840ff63dbb5ce9883cb33209b7/chatSessions/321398b0-ffd0-4ae6-a723-38af4cd487ff.jsonl lines=0→0 unrecognizedRows=0
+[2026-08-30T14:33:36.303Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Git diff: 20 files changed, +542 -97 (19ms)
+[2026-08-30T14:33:36.342Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-30T14:33:36.342Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Generating summary for commit a9c348dd
+[2026-08-30T14:33:36.342Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Context: transcript=2, files=20, lines=542+97
+[2026-08-30T14:33:36.343Z] INFO  [LlmClient] [trace=d2129f9f8516c1237b3da462cdf66d4d] LLM call: action=summarize source=local-agent
+[2026-08-30T14:33:36.350Z] INFO  [ExecutableResolver] [trace=d2129f9f8516c1237b3da462cdf66d4d] claude discovery: 1 candidate(s)=[/opt/homebrew/bin/claude]; shims=[(none)]; knownPaths present=[(none)] (searched 16 PATH entries)
+[2026-08-30T14:33:37.501Z] INFO  [ExecutableResolver] [trace=d2129f9f8516c1237b3da462cdf66d4d] Resolved claude executable: /opt/homebrew/bin/claude (v2.1.227)
+[2026-08-30T14:34:12.641Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-30T14:34:12.641Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:34:12.641Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:34:12.641Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:34:12.659Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T14:34:12.779Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T14:34:12.780Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"6ce711de","author":"Abdul-sid"}
+[2026-08-30T14:34:12.842Z] WARN  [ReadStorageResolver] createReadStorage: folder lacks index.json — falling back to orphan branch (migration incomplete, or folder wiped)
+[2026-08-30T14:34:22.181Z] INFO  [PrePushHook] [trace=880450445e15c62a706ef7ab2abd4925] pre-push hook: remote=origin budget=3000ms
+[2026-08-30T14:34:22.184Z] INFO  [RepoProfile] [trace=880450445e15c62a706ef7ab2abd4925] manual-disable read → false (by=manuallyDisabled, pid=9397, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:34:22.195Z] INFO  [PushPendingStore] [trace=880450445e15c62a706ef7ab2abd4925] Enqueued 2 new push-pending entries (branch=main)
+[2026-08-30T14:34:22.196Z] INFO  [PrePushHook] [trace=880450445e15c62a706ef7ab2abd4925] pre-push: recorded 2 commit(s) across 1 pushed ref(s)
+[2026-08-30T14:34:22.202Z] INFO  [PrePushHook] [trace=880450445e15c62a706ef7ab2abd4925] Recorded 2 commit(s) for later sync — not signed in to Jolli
+[2026-08-30T14:34:22.203Z] WARN  [CutoverRouter] [trace=880450445e15c62a706ef7ab2abd4925] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:34:22.205Z] INFO  [StorageFactory] [trace=880450445e15c62a706ef7ab2abd4925] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T14:34:43.222Z] WARN  [LlmClient] [trace=d2129f9f8516c1237b3da462cdf66d4d] Local-agent model mismatch: action=summarize tool=claude-code requested=sonnet actual=claude-haiku-4-5-20251001 — the tool did not run the requested model.
+[2026-08-30T14:34:43.222Z] INFO  [LlmClient] [trace=d2129f9f8516c1237b3da462cdf66d4d] Local-agent completion: action=summarize tool=claude-code model=claude-haiku-4-5-20251001 cost=$0.2902 in=2 out=6057 cached=29390
+[2026-08-30T14:34:43.227Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Parsed 2 topic(s) from delimited text format
+[2026-08-30T14:34:43.227Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Summary parsed: 2 topic(s), response length: 4669 chars
+[2026-08-30T14:34:43.227Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Topic 1: Stripped Next.js starter boilerplate and set homepage to "ghost AI"
+[2026-08-30T14:34:43.227Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Topic 2: Authored product, architecture, UI, and workflow specification docs for Ghost AI
+[2026-08-30T14:34:43.227Z] INFO  [Summarizer] [trace=d2129f9f8516c1237b3da462cdf66d4d] Recap (1059 chars): This session established the foundational specification for Ghost AI, a real-time collaborative system-design workspace 
+[2026-08-30T14:34:43.228Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] API summary generated (66.9s)
+[2026-08-30T14:34:43.228Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-08-30T14:34:43.229Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-30T14:34:43.229Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-30T14:34:43.229Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Note association: detected 0 note(s): []
+[2026-08-30T14:34:43.229Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Reference association: detected 0 ref(s) for branch main
+[2026-08-30T14:34:43.237Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Summary built for a9c348dd: recap=yes, topics=2, plans=absent, notes=absent, references=absent
+[2026-08-30T14:34:43.272Z] INFO  [GitOps] [trace=d2129f9f8516c1237b3da462cdf66d4d] Creating orphan branch 'jollimemory/summaries/v3' using plumbing commands
+[2026-08-30T14:34:43.296Z] INFO  [GitOps] [trace=d2129f9f8516c1237b3da462cdf66d4d] Orphan branch 'jollimemory/summaries/v3' created successfully
+[2026-08-30T14:34:43.331Z] INFO  [GitOps] [trace=d2129f9f8516c1237b3da462cdf66d4d] Updated branch 'jollimemory/summaries/v3': 4 written, 0 deleted (via fast-import)
+[2026-08-30T14:34:43.334Z] INFO  [MetadataManager] [trace=d2129f9f8516c1237b3da462cdf66d4d] Branch mapping created: main → main
+[2026-08-30T14:34:43.365Z] INFO  [MetadataManager] [trace=d2129f9f8516c1237b3da462cdf66d4d] Manifest updated: main/first-commit-a9c348dd.md (commit)
+[2026-08-30T14:34:43.365Z] INFO  [FolderStorage] [trace=d2129f9f8516c1237b3da462cdf66d4d] Markdown generated: main/first-commit-a9c348dd.md
+[2026-08-30T14:34:43.366Z] INFO  [FolderStorage] [trace=d2129f9f8516c1237b3da462cdf66d4d] Wrote 4 files, deleted 0 (Add summary for a9c348dd: first commit)
+[2026-08-30T14:34:43.366Z] INFO  [SummaryStore] [trace=d2129f9f8516c1237b3da462cdf66d4d] Summary stored successfully for commit a9c348dd
+[2026-08-30T14:34:43.368Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Summary stored successfully for commit a9c348dd (131ms, 0 plans, 0 notes, 0 references)
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] === Pipeline completed in 67.1s ===
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] === Summary content (2 topics) ===
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Topic: Stripped Next.js starter boilerplate and set homepage to "ghost AI"
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Trigger:   The generated Next.js starter still contained default boilerplate — sample homepage content, unused theme CSS, and placeholder icon assets — that needed to be cleared out before the app could carry its own identity.
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Response:  - Reduced `app/globals.css` down to just the Tailwind import, removing the default light/dark CSS custom-property theme and body styling that shipped with the starter.
+- Deleted the starter SVG icons in `public/` (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`) while explicitly keeping `favicon.ico` in place.
+- Replaced the default Next.js starter markup in `app/page.tsx` with a minimal component rendering a centered "ghost AI" div; confirmed no `page.module.css` existed so there was nothing to remove there.
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Decisions: The favicon was kept while every other default icon asset was removed, preserving the browser tab identity while clearing out unused starter branding.
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Topic: Authored product, architecture, UI, and workflow specification docs for Ghost AI
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Trigger:   The project needed a foundational specification before feature work could begin — defining what Ghost AI is, how it should be built technically, and what rules an AI agent should follow while implementing it.
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Response:  - Added `context/project-overview.md` describing Ghost AI as a real-time collaborative system-design workspace, including its core user flow, feature set, in/out-of-scope items, and success criteria; updated `AGENTS.md` to require reading all context files in a defined order before implementation and to keep `context/progress-tracker.md` current.
+- Added `context/architecture-context.md` defining the stack (Next.js, Clerk, Prisma/PostgreSQL, Liveblocks/React Flow, Trigger.dev, Vercel Blob), system boundaries between API routes, background tasks, and shared libraries, the storage split between database and blob storage, and a set of invariants.
+- Added `context/ui-context.md` and `context/code-standards.md` documenting a dark-only visual theme with a full color token table, typography, canvas node/edge styling conventions, and implementation rules (strict TypeScript, server-components-by-default, thin API routes, no raw color classes).
+[2026-08-30T14:34:43.369Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d]   Decisions: - **Split storage by artifact size**: project metadata, ownership, and task run records live in a relational database, while large generated artifacts like canvas snapshots and specs are stored in blob storage and referenced by URL — keeping the database lean while still supporting large generated content.
+- **Background workers own long-running AI work**: system-design generation and spec generation run as durable background tasks rather than inside request handlers, so API routes stay fast and generation can survive interruptions.
+- **Spec-driven build process**: development guidance requires reading the product, architecture, UI, and standards docs before writing code and keeping a progress tracker in sync with actual implementation state, giving future work (human or AI-driven) a single source of truth instead of ad hoc interpretation.
+[2026-08-30T14:34:43.376Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] Processed 1 queue entries
+[2026-08-30T14:34:43.377Z] INFO  [PushExecutor] [trace=d2129f9f8516c1237b3da462cdf66d4d] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-30T14:34:43.378Z] INFO  [PushExecutor] [trace=d2129f9f8516c1237b3da462cdf66d4d] processPushPending(post-queue): 2 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-30T14:34:43.381Z] INFO  [QueueWorker] [trace=d2129f9f8516c1237b3da462cdf66d4d] === Queue worker finished ===
+[2026-08-30T14:34:43.381Z] INFO  [SessionStartHook] [trace=d2129f9f8516c1237b3da462cdf66d4d] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-30T14:34:43.382Z] INFO  [AutoCutover] [trace=d2129f9f8516c1237b3da462cdf66d4d] skipping auto-cutover for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai — Node 20.16.0 has no flag-free node:sqlite
+[2026-08-30T14:34:43.382Z] INFO  [SessionSync] [trace=d2129f9f8516c1237b3da462cdf66d4d] session sync: not uploading — no API key configured
+[2026-08-30T14:34:43.444Z] INFO  [PushExecutor] [trace=d2129f9f8516c1237b3da462cdf66d4d] processPushPending(post-queue): not signed in — keeping 2 entries for later
+[2026-08-30T14:34:43.538Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-30T14:34:43.538Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:34:43.538Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:34:43.538Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:34:43.612Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"6ce711de","author":"Abdul-sid"}
+[2026-08-30T14:42:41.209Z] INFO  [StopHook] Stop hook triggered (session=684585d1-9ea6-47fc-85de-05d7bfc03022)
+[2026-08-30T14:42:41.211Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=10923, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:42:41.211Z] INFO  [StopHook] Hook input — session_id=684585d1-9ea6-47fc-85de-05d7bfc03022, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/684585d1-9ea6-47fc-85de-05d7bfc03022.jsonl
+[2026-08-30T14:42:41.216Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T14:42:41.225Z] INFO  [PlanDiscovery] Plan discovery: upserted 0 slug(s) + 1 external path(s) into plans.json
+[2026-08-30T14:42:41.309Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T14:42:41.309Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:42:41.309Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:42:41.309Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:42:41.319Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T14:42:41.435Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=2, summaries=1, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T14:42:41.888Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:42:41.888Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T14:42:41.888Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:42:41.888Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
