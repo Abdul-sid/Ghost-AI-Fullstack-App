@@ -1,0 +1,83 @@
+[2026-08-30T13:54:12.599Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T13:54:12.627Z] INFO  [RepoProfile] manual-disable MIGRATE → manuallyDisabled=false (pid=5963, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, fence=none, from=legacy-marker) ←  at fY (/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:115:909) | at /Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:116:953 | at async Ef (/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:3:5846) | at async uY (/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:116:572) | at async yo (/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:116:475) | at async t.refreshHookPathsIfStale (/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist/Extension.js:4021:18339)
+[2026-08-30T13:54:12.631Z] INFO  [RepoProfile] manual-disable read → false (by=migrate:legacy-marker, pid=5963, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=undefined fence=none)
+[2026-08-30T13:54:12.632Z] INFO  [bridge] Own dist-paths/vscode missing, stale, or pointing elsewhere — re-enabling
+[2026-08-30T13:54:12.632Z] INFO  [bridge] enable() called
+[2026-08-30T13:54:12.633Z] INFO  [Installer] Installing Jolli Memory hooks
+[2026-08-30T13:54:12.665Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:12.716Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:12.731Z] INFO  [DispatchScripts] Wrote resolve-dist-path, run-hook, and run-cli scripts to /Users/abdurrehmansiddiqui/.jolli/jollimemory
+[2026-08-30T13:54:12.735Z] INFO  [DistPathWriter] Wrote dist-paths/vscode (version=0.99.16, distDir=/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist)
+[2026-08-30T13:54:12.757Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.agents/skills/jolli-recall/SKILL.md
+[2026-08-30T13:54:12.760Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:12.827Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 3) to /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.agents/skills/jolli-search/SKILL.md
+[2026-08-30T13:54:12.830Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 6) to /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.agents/skills/jolli-local-run/SKILL.md
+[2026-08-30T13:54:12.831Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 5) to /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.agents/skills/jolli-remote-run/SKILL.md
+[2026-08-30T13:54:12.833Z] INFO  [SkillInstaller] Wrote SKILL.md (revision 9) to /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.agents/skills/jolli/SKILL.md
+[2026-08-30T13:54:12.839Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:13.045Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:13.391Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-30T13:54:13.391Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T13:54:13.391Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T13:54:13.392Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T13:54:13.686Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"6ce711de","author":"Abdul-sid"}
+[2026-08-30T13:54:13.715Z] INFO  [SchemaV5Migration] Storage backend not initialized yet — skipping schema v5 migration (no data to migrate)
+[2026-08-30T13:54:13.715Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=true migrated=0 skipped=0
+[2026-08-30T13:54:13.773Z] INFO  [GitExclude] Updated /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.git/info/exclude with 7 Jolli skill exclude paths
+[2026-08-30T13:54:13.774Z] INFO  [McpRegistration] Registered MCP server in /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.mcp.json
+[2026-08-30T13:54:13.783Z] INFO  [JsonMcpWriter] MCP server already registered in /Users/abdurrehmansiddiqui/Library/Application Support/Code/User/mcp.json — no write needed
+[2026-08-30T13:54:13.785Z] INFO  [GitHookInstaller] Git post-commit hook installed
+[2026-08-30T13:54:13.786Z] INFO  [GitHookInstaller] Git post-rewrite hook installed
+[2026-08-30T13:54:13.787Z] INFO  [GitHookInstaller] Git prepare-commit-msg hook installed
+[2026-08-30T13:54:13.787Z] INFO  [GitHookInstaller] Git post-merge hook installed
+[2026-08-30T13:54:13.788Z] INFO  [GitHookInstaller] Git pre-push hook installed
+[2026-08-30T13:54:13.789Z] INFO  [Installer] Skipping v5 migration on vscode-extension source — Extension.ts owns it with UI
+[2026-08-30T13:54:13.789Z] INFO  [Installer] Installation complete
+[2026-08-30T13:54:13.790Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:13.892Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=false, hermesHook=false, worktreeHooks=false, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:13.893Z] INFO  [initialLoad] All panels loaded — updating status bar
+[2026-08-30T13:54:13.893Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:13.954Z] INFO  [Installer] Status: enabled=false, claude=false, git=false, geminiHook=false, hermesHook=false, worktreeHooks=false, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:14.044Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:14.046Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:14.163Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:14.174Z] INFO  [StorageFactory] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:14.333Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:14.338Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:54:14.458Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=1, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T13:54:14.459Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=5963, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T13:54:28.463Z] INFO  [McpProxy] [trace=a46470877a99c2822576b8f4ac16371e] Spawned MCP daemon (pid 7806) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.463Z] INFO  [McpProxy] [trace=aca45788c604bf29579b62cf007f70a9] Spawned MCP daemon (pid 7805) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.731Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai)
+[2026-08-30T13:54:28.734Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai)
+[2026-08-30T13:54:28.736Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=7715, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T13:54:28.738Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-30T13:54:28.739Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=7721, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T13:54:28.741Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-30T13:54:28.777Z] INFO  [SkillAutoRefresh] [trace=cd6b07177f4f6289e2c6c466be027008] Refreshed Jolli skills at /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai for version 0.99.16
+[2026-08-30T13:54:28.777Z] INFO  [SkillAutoRefresh] [trace=d11d9ee5bf56538d4e919424931d3d45] Refreshed Jolli skills at /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai for version 0.99.16
+[2026-08-30T13:54:28.796Z] WARN  [CutoverRouter] [trace=cd6b07177f4f6289e2c6c466be027008] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T13:54:28.796Z] WARN  [CutoverRouter] [trace=d11d9ee5bf56538d4e919424931d3d45] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T13:54:28.798Z] INFO  [StorageFactory] [trace=d11d9ee5bf56538d4e919424931d3d45] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.798Z] INFO  [StorageFactory] [trace=cd6b07177f4f6289e2c6c466be027008] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.851Z] INFO  [McpServer] [trace=cd6b07177f4f6289e2c6c466be027008] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-08-30T13:54:28.854Z] INFO  [McpDaemon] [trace=cd6b07177f4f6289e2c6c466be027008] MCP daemon listening on /var/folders/k_/m8ljq1px33vgk01m72w07k6m0000gn/T/.jolli-mcp-501/6848b84c48dc9f37.sock (cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, version=0.99.16)
+[2026-08-30T13:54:28.851Z] INFO  [McpServer] [trace=d11d9ee5bf56538d4e919424931d3d45] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-08-30T13:54:28.878Z] INFO  [McpProxy] [trace=a46470877a99c2822576b8f4ac16371e] Attached to MCP daemon 7806 (v0.99.16) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.879Z] INFO  [McpProxy] [trace=aca45788c604bf29579b62cf007f70a9] Attached to MCP daemon 7806 (v0.99.16) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T13:54:28.880Z] INFO  [McpServer] [trace=cd6b07177f4f6289e2c6c466be027008] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-08-30T13:54:28.894Z] INFO  [McpServer] MCP client connected: claude-code/2.1.251 (agent: claude)
+[2026-08-30T13:54:28.895Z] INFO  [McpServer] MCP client connected: claude-code/2.1.251 (agent: claude)
+[2026-08-30T13:54:28.854Z] WARN  [McpDaemon] [trace=d11d9ee5bf56538d4e919424931d3d45] listen(/var/folders/k_/m8ljq1px33vgk01m72w07k6m0000gn/T/.jolli-mcp-501/6848b84c48dc9f37.sock) failed: EADDRINUSE
+[2026-08-30T13:54:28.854Z] INFO  [McpCommand] [trace=d11d9ee5bf56538d4e919424931d3d45] MCP daemon exited: address-in-use
+[2026-08-30T13:58:36.756Z] INFO  [StopHook] Stop hook triggered (session=684585d1-9ea6-47fc-85de-05d7bfc03022)
+[2026-08-30T13:58:36.769Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=8512, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T13:58:36.769Z] INFO  [StopHook] Hook input — session_id=684585d1-9ea6-47fc-85de-05d7bfc03022, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/684585d1-9ea6-47fc-85de-05d7bfc03022.jsonl
+[2026-08-30T13:58:36.776Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T13:58:36.865Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-30T13:58:36.865Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T13:58:36.865Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T13:58:36.865Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T13:58:36.874Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T13:58:37.065Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=2, summaries=0, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T14:26:58.483Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
