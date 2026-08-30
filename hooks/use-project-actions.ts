@@ -4,6 +4,7 @@ import { useCallback, useMemo, useState } from "react";
 
 import {
   hasUnsupportedCharacters,
+  NAME_NEEDS_SLUG_MESSAGE,
   slugifyProjectName,
   SUPPORTED_NAME_MESSAGE,
 } from "@/lib/slug";
@@ -102,6 +103,12 @@ export function useProjectActions(): ProjectActions {
    * Create is the only flow that validates the name, because it is the only
    * one that derives a slug from it — rename edits the display name and leaves
    * the room ID alone (`context/feature-specs/07-wire-editor-home.md`).
+   *
+   * Two ways a name fails. Unsupported characters are reported first, since
+   * that message is the more specific of the two. An empty slug is the catch
+   * for names built only from characters the slug trims — blank, whitespace,
+   * or hyphens — which pass the character check but leave nothing to derive a
+   * room ID from.
    */
   const submitCreate = useCallback(() => {
     if (hasNameWarning) {
@@ -109,8 +116,13 @@ export function useProjectActions(): ProjectActions {
       return;
     }
 
+    if (slugPreview === "") {
+      setNameError(NAME_NEEDS_SLUG_MESSAGE);
+      return;
+    }
+
     closeDialog();
-  }, [closeDialog, hasNameWarning]);
+  }, [closeDialog, hasNameWarning, slugPreview]);
 
   return {
     openDialog,
