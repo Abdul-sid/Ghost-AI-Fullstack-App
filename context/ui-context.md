@@ -28,6 +28,8 @@ All colors are defined as CSS custom properties in `globals.css` and mapped to T
 
 Tailwind utility names map to these variables. Use `bg-base`, `bg-surface`, `text-copy-primary`, `text-copy-muted`, `border-surface-border`, `text-brand`, `bg-accent-dim`, etc.
 
+Never register a theme color whose name collides with a core Tailwind utility. Tailwind v4 generates a whole utility family from every `--color-*` key, and a color key wins over the core utility of the same name. `--color-base` did exactly this: it turned `text-base` into a color utility, so the `text-base` that shadcn's `input`, `textarea`, `card`, and `dialog` primitives use as a font size painted their text in `--bg-base` — black on black. `bg-base` is therefore defined as a standalone `@utility` in `globals.css` rather than as a theme color key. Text colors always come from the `text-copy-*` scale; `--primary-foreground` (page black) is the ink for filled brand surfaces.
+
 ## Typography
 
 | Role      | Font       | CSS Variable        |
