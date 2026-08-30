@@ -1,10 +1,12 @@
 "use client";
 
 import { useId } from "react";
+import { CircleAlert, TriangleAlert } from "lucide-react";
 
 import { EditorDialog } from "@/components/editor/editor-dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { SUPPORTED_NAME_MESSAGE } from "@/lib/slug";
 
 interface CreateProjectDialogProps {
   open: boolean;
@@ -14,6 +16,10 @@ interface CreateProjectDialogProps {
   onNameChange: (name: string) => void;
   /** Slug derived from `name`, re-rendered on every keystroke. */
   slugPreview: string;
+  /** True when the name holds characters the slug cannot keep. */
+  hasWarning: boolean;
+  /** Message from a rejected submit, shown as an error. `null` when valid. */
+  error: string | null;
   isSubmitting: boolean;
   onSubmit: () => void;
 }
@@ -25,11 +31,14 @@ export function CreateProjectDialog({
   name,
   onNameChange,
   slugPreview,
+  hasWarning,
+  error,
   isSubmitting,
   onSubmit,
 }: CreateProjectDialogProps) {
   const formId = useId();
   const inputId = useId();
+  const messageId = useId();
 
   return (
     <EditorDialog
@@ -81,6 +90,8 @@ export function CreateProjectDialog({
           onChange={(event) => onNameChange(event.target.value)}
           placeholder="Payments Platform"
           autoComplete="off"
+          aria-invalid={Boolean(error)}
+          aria-describedby={error || hasWarning ? messageId : undefined}
           className="h-9 rounded-xl"
         />
 
@@ -93,6 +104,26 @@ export function CreateProjectDialog({
             <span className="font-mono text-copy-faint">your-project-name</span>
           )}
         </p>
+
+        {/* A rejected submit outranks the typing warning: same row, same id. */}
+        {error ? (
+          <p
+            id={messageId}
+            role="alert"
+            className="flex items-start gap-1.5 text-xs text-error"
+          >
+            <CircleAlert className="mt-px h-3.5 w-3.5 shrink-0" aria-hidden />
+            <span>{error}</span>
+          </p>
+        ) : hasWarning ? (
+          <p
+            id={messageId}
+            className="flex items-start gap-1.5 text-xs text-warning"
+          >
+            <TriangleAlert className="mt-px h-3.5 w-3.5 shrink-0" aria-hidden />
+            <span>{SUPPORTED_NAME_MESSAGE}</span>
+          </p>
+        ) : null}
       </form>
     </EditorDialog>
   );

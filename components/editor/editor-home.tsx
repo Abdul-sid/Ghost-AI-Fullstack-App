@@ -29,6 +29,8 @@ export function EditorHome() {
     targetProject,
     name,
     slugPreview,
+    hasNameWarning,
+    nameError,
     isSubmitting,
     setName,
     openCreateDialog,
@@ -86,6 +88,8 @@ export function EditorHome() {
         name={name}
         onNameChange={setName}
         slugPreview={slugPreview}
+        hasWarning={hasNameWarning}
+        error={nameError}
         isSubmitting={isSubmitting}
         onSubmit={submitCreate}
       />
