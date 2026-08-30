@@ -200,3 +200,218 @@
 [2026-08-30T14:42:41.888Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
 [2026-08-30T14:42:41.888Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
 [2026-08-30T14:42:41.888Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:58:14.759Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-30T14:58:14.768Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11440, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:58:14.778Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-30T14:58:14.920Z] INFO  [RepoProfile] [trace=c0769e1ed77afabd13df76ecc50c602d] manual-disable read → false (by=manuallyDisabled, pid=11446, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:58:14.930Z] INFO  [PostCommitHook] [trace=c0769e1ed77afabd13df76ecc50c602d] Detected operation: commit
+[2026-08-30T14:58:14.942Z] INFO  [PostCommitHook] [trace=c0769e1ed77afabd13df76ecc50c602d] Enqueued: type=commit hash=79848e8a
+[2026-08-30T14:58:14.942Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Launching background worker
+[2026-08-30T14:58:14.943Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Background worker spawned (PID: 11451)
+[2026-08-30T14:58:15.168Z] INFO  [RepoProfile] [trace=c0769e1ed77afabd13df76ecc50c602d] manual-disable read → false (by=manuallyDisabled, pid=11451, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:58:15.172Z] WARN  [CutoverRouter] [trace=c0769e1ed77afabd13df76ecc50c602d] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:58:15.175Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] === Queue worker started === node=20.16.0 kind=vscode-plugin source=vscode pkgVer=0.99.16 cliVer=0.99.16 dist=/Users/abdurrehmansiddiqui/.vscode/extensions/jolli.jollimemory-vscode-0.99.16/dist
+[2026-08-30T14:58:15.183Z] WARN  [CutoverRouter] [trace=c0769e1ed77afabd13df76ecc50c602d] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:58:15.184Z] INFO  [StorageFactory] [trace=c0769e1ed77afabd13df76ecc50c602d] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T14:58:15.214Z] INFO  [HermesDiscoverer] [trace=c0769e1ed77afabd13df76ecc50c602d] Hermes support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.223Z] INFO  [CursorDetector] [trace=c0769e1ed77afabd13df76ecc50c602d] Cursor support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.224Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Processing queue entry: type=commit hash=79848e8a
+[2026-08-30T14:58:15.242Z] INFO  [GitOps] [trace=c0769e1ed77afabd13df76ecc50c602d] Commit 79848e8a: chore: update dependencies in package.json for improved UI c
+[2026-08-30T14:58:15.242Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Commit: 79848e8a - chore: update dependencies in package.json for improved UI components and styling (13ms)
+[2026-08-30T14:58:15.245Z] INFO  [OpenCodeDiscoverer] [trace=c0769e1ed77afabd13df76ecc50c602d] OpenCode support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.245Z] INFO  [CursorDetector] [trace=c0769e1ed77afabd13df76ecc50c602d] Cursor support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.245Z] INFO  [CopilotDetector] [trace=c0769e1ed77afabd13df76ecc50c602d] Copilot CLI support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.266Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Discovered 1 Copilot Chat session(s)
+[2026-08-30T14:58:15.267Z] INFO  [DevinDiscoverer] [trace=c0769e1ed77afabd13df76ecc50c602d] Devin support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.267Z] INFO  [AntigravityDetector] [trace=c0769e1ed77afabd13df76ecc50c602d] Antigravity support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.267Z] INFO  [HermesDiscoverer] [trace=c0769e1ed77afabd13df76ecc50c602d] Hermes support disabled: this runtime is Node 20.16.0, requires 22.13+ for built-in SQLite
+[2026-08-30T14:58:15.285Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Transcript source: session=684585d1-9ea6-47fc-85de-05d7bfc03022, lines=53→155, entries=2
+[2026-08-30T14:58:15.287Z] WARN  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Transcript source read to zero conversation entries: source=copilot-chat path=/Users/abdurrehmansiddiqui/Library/Application Support/Code/User/workspaceStorage/5f0498840ff63dbb5ce9883cb33209b7/chatSessions/321398b0-ffd0-4ae6-a723-38af4cd487ff.jsonl lines=0→0 unrecognizedRows=0
+[2026-08-30T14:58:15.287Z] WARN  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Not advancing read cursor: source recognized nothing in consumed lines: source=copilot-chat path=/Users/abdurrehmansiddiqui/Library/Application Support/Code/User/workspaceStorage/5f0498840ff63dbb5ce9883cb33209b7/chatSessions/321398b0-ffd0-4ae6-a723-38af4cd487ff.jsonl lines=0→0 unrecognizedRows=0
+[2026-08-30T14:58:15.332Z] WARN  [GitOps] [trace=c0769e1ed77afabd13df76ecc50c602d] Diff exceeds 150000-char budget (287853 chars) — prepending --stat file list and truncating body
+[2026-08-30T14:58:15.350Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Git diff: 54 files changed, +5602 -188 (63ms)
+[2026-08-30T14:58:15.421Z] WARN  [GitOps] [trace=c0769e1ed77afabd13df76ecc50c602d] Diff exceeds 60000-char budget (287853 chars) — prepending --stat file list and truncating body
+[2026-08-30T14:58:15.425Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] LLM call: action=rank-context source=local-agent
+[2026-08-30T14:58:15.433Z] INFO  [ExecutableResolver] [trace=c0769e1ed77afabd13df76ecc50c602d] claude discovery: 1 candidate(s)=[/opt/homebrew/bin/claude]; shims=[(none)]; knownPaths present=[(none)] (searched 16 PATH entries)
+[2026-08-30T14:58:16.617Z] INFO  [ExecutableResolver] [trace=c0769e1ed77afabd13df76ecc50c602d] Resolved claude executable: /opt/homebrew/bin/claude (v2.1.227)
+[2026-08-30T14:58:19.956Z] WARN  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent model mismatch: action=rank-context tool=claude-code requested=sonnet actual=claude-haiku-4-5-20251001 — the tool did not run the requested model.
+[2026-08-30T14:58:19.956Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent completion: action=rank-context tool=claude-code model=claude-haiku-4-5-20251001 cost=$0.0935 in=2 out=47 cached=13585
+[2026-08-30T14:58:19.962Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Prompt blocks: plans=1 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-30T14:58:19.963Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d] Generating summary for commit 79848e8a
+[2026-08-30T14:58:19.963Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d] Context: transcript=2, files=54, lines=5602+188
+[2026-08-30T14:58:19.963Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] LLM call: action=summarize source=local-agent
+[2026-08-30T14:58:22.093Z] INFO  [PrePushHook] [trace=af50f42b42454ed16d58b2029dc61ccc] pre-push hook: remote=origin budget=3000ms
+[2026-08-30T14:58:22.102Z] INFO  [RepoProfile] [trace=af50f42b42454ed16d58b2029dc61ccc] manual-disable read → false (by=manuallyDisabled, pid=11567, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T14:58:22.114Z] INFO  [PushPendingStore] [trace=af50f42b42454ed16d58b2029dc61ccc] Enqueued 1 new push-pending entries (branch=main)
+[2026-08-30T14:58:22.115Z] INFO  [PrePushHook] [trace=af50f42b42454ed16d58b2029dc61ccc] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-30T14:58:22.120Z] INFO  [PrePushHook] [trace=af50f42b42454ed16d58b2029dc61ccc] Recorded 1 commit(s) for later sync — not signed in to Jolli
+[2026-08-30T14:58:22.121Z] WARN  [CutoverRouter] [trace=af50f42b42454ed16d58b2029dc61ccc] database unavailable for un-cutover repo (Node 20.16.0 lacks flag-free node:sqlite) — orphan remains authoritative
+[2026-08-30T14:58:22.122Z] INFO  [StorageFactory] [trace=af50f42b42454ed16d58b2029dc61ccc] StorageFactory.create: route=uncutover, projectPath=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T14:58:51.831Z] WARN  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent model mismatch: action=summarize tool=claude-code requested=sonnet actual=claude-haiku-4-5-20251001 — the tool did not run the requested model.
+[2026-08-30T14:58:51.832Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent completion: action=summarize tool=claude-code model=claude-haiku-4-5-20251001 cost=$0.5788 in=2 out=2882 cached=78846
+[2026-08-30T14:58:51.836Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d] Parsed 1 topic(s) from delimited text format
+[2026-08-30T14:58:51.836Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d] Summary parsed: 1 topic(s), response length: 2705 chars
+[2026-08-30T14:58:51.836Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d]   Topic 1: Set up shadcn/ui component library with dark-only Ghost AI theme tokens
+[2026-08-30T14:58:51.836Z] INFO  [Summarizer] [trace=c0769e1ed77afabd13df76ecc50c602d] Recap (735 chars): The developer set up the app's design system by installing and configuring shadcn/ui alongside seven reusable interface 
+[2026-08-30T14:58:51.836Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] API summary generated (31.9s)
+[2026-08-30T14:58:51.837Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan registry scan: found 1 uncommitted slug(s) on main: [progress-tracker]
+[2026-08-30T14:58:51.838Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan association: detected 1 slug(s) from transcripts: [progress-tracker]
+[2026-08-30T14:58:51.839Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan association: registry has 1 entries: [progress-tracker(commitHash=null)]
+[2026-08-30T14:58:51.842Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan archived: progress-tracker → progress-tracker-79848e8a (hash=8ace1eec53f1)
+[2026-08-30T14:58:51.907Z] INFO  [GitOps] [trace=c0769e1ed77afabd13df76ecc50c602d] Updated branch 'jollimemory/summaries/v3': 1 written, 0 deleted (via fast-import)
+[2026-08-30T14:58:51.909Z] INFO  [MetadataManager] [trace=c0769e1ed77afabd13df76ecc50c602d] Branch mapping created: main → main
+[2026-08-30T14:58:51.911Z] INFO  [MetadataManager] [trace=c0769e1ed77afabd13df76ecc50c602d] Manifest updated: main/plan--progress-tracker-79848e8a.md (plan)
+[2026-08-30T14:58:51.911Z] INFO  [FolderStorage] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan markdown generated: main/plan--progress-tracker-79848e8a.md
+[2026-08-30T14:58:51.911Z] INFO  [FolderStorage] [trace=c0769e1ed77afabd13df76ecc50c602d] Wrote 1 files, deleted 0 (Archive 1 plan(s) for commit 79848e8a)
+[2026-08-30T14:58:51.911Z] INFO  [SummaryStore] [trace=c0769e1ed77afabd13df76ecc50c602d] Stored 1 plan file(s)
+[2026-08-30T14:58:51.911Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Associated 1 plan(s) with commit 79848e8a
+[2026-08-30T14:58:51.911Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-30T14:58:51.912Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Note association: detected 0 note(s): []
+[2026-08-30T14:58:51.912Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Reference association: detected 0 ref(s) for branch main
+[2026-08-30T14:58:51.913Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] LLM call: action=plan-progress source=local-agent
+[2026-08-30T14:58:52.446Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:58:52.447Z] INFO  [PlanService] detectPlans found 0 plans (1 in registry)
+[2026-08-30T14:58:52.447Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:58:52.447Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:59:04.794Z] WARN  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent model mismatch: action=plan-progress tool=claude-code requested=sonnet actual=claude-haiku-4-5-20251001 — the tool did not run the requested model.
+[2026-08-30T14:59:04.794Z] INFO  [LlmClient] [trace=c0769e1ed77afabd13df76ecc50c602d] Local-agent completion: action=plan-progress tool=claude-code model=claude-haiku-4-5-20251001 cost=$0.5138 in=2 out=1204 cached=72885
+[2026-08-30T14:59:04.795Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Plan progress: evaluated 1/1 plan(s)
+[2026-08-30T14:59:04.804Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Summary built for 79848e8a: recap=yes, topics=1, plans=1 ref(s): [progress-tracker-79848e8a], notes=absent, references=absent
+[2026-08-30T14:59:04.881Z] INFO  [GitOps] [trace=c0769e1ed77afabd13df76ecc50c602d] Updated branch 'jollimemory/summaries/v3': 5 written, 0 deleted (via fast-import)
+[2026-08-30T14:59:04.913Z] INFO  [MetadataManager] [trace=c0769e1ed77afabd13df76ecc50c602d] Manifest updated: main/chore-update-dependencies-in-packagejson-for-impro-79848e8a.md (commit)
+[2026-08-30T14:59:04.913Z] INFO  [FolderStorage] [trace=c0769e1ed77afabd13df76ecc50c602d] Markdown generated: main/chore-update-dependencies-in-packagejson-for-impro-79848e8a.md
+[2026-08-30T14:59:04.914Z] INFO  [FolderStorage] [trace=c0769e1ed77afabd13df76ecc50c602d] Wrote 5 files, deleted 0 (Add summary for 79848e8a: chore: update dependencies in package.json for imp)
+[2026-08-30T14:59:04.914Z] INFO  [SummaryStore] [trace=c0769e1ed77afabd13df76ecc50c602d] Summary stored successfully for commit 79848e8a
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Summary stored successfully for commit 79848e8a (113ms, 1 plans, 0 notes, 0 references)
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] === Pipeline completed in 49.7s ===
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] === Summary content (1 topics) ===
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Topic: Set up shadcn/ui component library with dark-only Ghost AI theme tokens
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d]   Trigger:   The project needed its foundational design system in place before any feature UI could be built — a component library and a color theme matching the intended dark, ghost-themed visual identity for the app.
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d]   Response:  - Initialized shadcn/ui via `components.json` (style `base-nova`, neutral base color, RSC + CSS variables enabled) and installed `lucide-react`; added seven generated primitives to `components/ui/` — Button, Card, Dialog, Input, Tabs, Textarea, and ScrollArea — left unmodified per convention.
+- Created `lib/utils.ts` exporting a `cn()` helper built on `clsx` and `tailwind-merge` for safely combining Tailwind class strings.
+- Rewrote `app/globals.css` so the full Ghost AI dark palette (backgrounds, text, accent, AI, and state colors) lives once in `:root` with no light or `.dark` variant, wiring the same values into both shadcn's semantic design tokens (background, card, primary, border, etc.) and the app's own custom utility names (`bg-base`, `text-copy-primary`, `border-surface-border`, `text-brand`, and similar).
+[2026-08-30T14:59:04.917Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d]   Decisions: - **Single dark-only theme source**: rather than supporting a toggleable light/dark mode, the palette was defined once and mapped onto every consumer (shadcn tokens and custom utility classes), keeping styling consistent and eliminating a class of bugs where components accidentally pick up default light theming.
+- **No hand-editing of generated components**: the shadcn-generated files in `components/ui/` are treated as vendor code; any custom behavior needed later must be built by wrapping or extending them elsewhere, keeping future upgrades from the component library conflict-free.
+[2026-08-30T14:59:04.924Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] Processed 1 queue entries
+[2026-08-30T14:59:04.926Z] INFO  [PushExecutor] [trace=c0769e1ed77afabd13df76ecc50c602d] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-30T14:59:04.927Z] INFO  [PushExecutor] [trace=c0769e1ed77afabd13df76ecc50c602d] processPushPending(post-queue): 3 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-30T14:59:04.928Z] INFO  [QueueWorker] [trace=c0769e1ed77afabd13df76ecc50c602d] === Queue worker finished ===
+[2026-08-30T14:59:04.929Z] INFO  [SessionStartHook] [trace=c0769e1ed77afabd13df76ecc50c602d] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-30T14:59:04.929Z] INFO  [AutoCutover] [trace=c0769e1ed77afabd13df76ecc50c602d] skipping auto-cutover for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai — Node 20.16.0 has no flag-free node:sqlite
+[2026-08-30T14:59:04.930Z] INFO  [SessionSync] [trace=c0769e1ed77afabd13df76ecc50c602d] session sync: not uploading — no API key configured
+[2026-08-30T14:59:04.982Z] INFO  [PushExecutor] [trace=c0769e1ed77afabd13df76ecc50c602d] processPushPending(post-queue): not signed in — keeping 3 entries for later
+[2026-08-30T14:59:05.082Z] INFO  [PlanService] detectPlans found 0 plans (1 in registry)
+[2026-08-30T14:59:05.082Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T14:59:05.082Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T14:59:05.085Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T14:59:05.158Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"6ce711de","author":"Abdul-sid"}
+[2026-08-30T15:03:58.207Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai)
+[2026-08-30T15:03:58.210Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=11782, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:03:58.211Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-30T15:03:58.264Z] INFO  [McpProxy] [trace=818f21e22bcc03295bb3b0e90dc44b79] Attached to MCP daemon 7806 (v0.99.16) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T15:03:58.279Z] INFO  [McpServer] [trace=cd6b07177f4f6289e2c6c466be027008] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-08-30T15:03:58.308Z] INFO  [McpServer] MCP client connected: claude-code/2.1.251 (agent: claude)
+[2026-08-30T15:13:06.832Z] INFO  [StopHook] Stop hook triggered (session=61d3e21f-dc1f-478e-9b39-66a09c1985fd)
+[2026-08-30T15:13:06.835Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=13036, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:13:06.835Z] INFO  [StopHook] Hook input — session_id=61d3e21f-dc1f-478e-9b39-66a09c1985fd, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/61d3e21f-dc1f-478e-9b39-66a09c1985fd.jsonl
+[2026-08-30T15:13:06.840Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:13:06.850Z] INFO  [PlanDiscovery] Plan discovery: archived plan progress-tracker file changed — creating new entry
+[2026-08-30T15:13:06.853Z] INFO  [PlanDiscovery] Plan discovery: upserted 0 slug(s) + 1 external path(s) into plans.json
+[2026-08-30T15:13:06.934Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:13:06.934Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:13:06.934Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:13:06.934Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T15:13:06.953Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:13:07.077Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=3, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:13:07.515Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:13:07.515Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:13:07.515Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T15:13:07.515Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:16:16.177Z] INFO  [StopHook] Stop hook triggered (session=61d3e21f-dc1f-478e-9b39-66a09c1985fd)
+[2026-08-30T15:16:16.184Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=13340, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:16:16.184Z] INFO  [StopHook] Hook input — session_id=61d3e21f-dc1f-478e-9b39-66a09c1985fd, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/61d3e21f-dc1f-478e-9b39-66a09c1985fd.jsonl
+[2026-08-30T15:16:16.190Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:16:16.289Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:16:16.289Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:16:16.298Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:16:16.298Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:16:16.298Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-30T15:16:16.459Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=3, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:21:21.416Z] INFO  [StopHook] Stop hook triggered (session=61d3e21f-dc1f-478e-9b39-66a09c1985fd)
+[2026-08-30T15:21:21.418Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=13689, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:21:21.418Z] INFO  [StopHook] Hook input — session_id=61d3e21f-dc1f-478e-9b39-66a09c1985fd, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/61d3e21f-dc1f-478e-9b39-66a09c1985fd.jsonl
+[2026-08-30T15:21:21.422Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:21:21.447Z] INFO  [SessionTracker] upsertSkillEntry: claude:run (new, ×1)
+[2026-08-30T15:21:21.448Z] INFO  [SkillDiscovery] Persisted 1 skill(s) from 61d3e21f-dc1f-478e-9b39-66a09c1985fd.jsonl
+[2026-08-30T15:21:21.519Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:21:21.519Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:21:21.519Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:21:21.519Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:21:21.528Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:21:21.729Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=3, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:21:22.219Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:21:22.220Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:21:22.220Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:21:22.220Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:23:06.567Z] INFO  [SessionStartHook] SessionStartHook invoked (cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai)
+[2026-08-30T15:23:06.570Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=13843, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:23:06.570Z] INFO  [SessionStartHook] No briefing or reminder generated (skipped or timed out)
+[2026-08-30T15:23:06.619Z] INFO  [McpProxy] [trace=36b0f2aa923ba53a9ebfa4ccfe721f27] Attached to MCP daemon 7806 (v0.99.16) for /Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai
+[2026-08-30T15:23:06.622Z] INFO  [McpServer] [trace=cd6b07177f4f6289e2c6c466be027008] MCP runtime ready: 10/10 built-in (insideRepo=true) + 0 platform tool(s), gate=open, manifest=fetch-failed
+[2026-08-30T15:23:06.634Z] INFO  [McpServer] MCP client connected: claude-code/2.1.251 (agent: claude)
+[2026-08-30T15:29:31.568Z] INFO  [StopHook] Stop hook triggered (session=27702c39-ebd7-4ea6-a8da-133615a79b98)
+[2026-08-30T15:29:31.571Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=15090, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:29:31.571Z] INFO  [StopHook] Hook input — session_id=27702c39-ebd7-4ea6-a8da-133615a79b98, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/27702c39-ebd7-4ea6-a8da-133615a79b98.jsonl
+[2026-08-30T15:29:31.578Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:29:31.690Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:29:31.690Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:29:31.699Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:29:31.699Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:29:31.699Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:29:31.968Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:32:33.834Z] INFO  [StopHook] Stop hook triggered (session=27702c39-ebd7-4ea6-a8da-133615a79b98)
+[2026-08-30T15:32:33.854Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=15336, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:32:33.854Z] INFO  [StopHook] Hook input — session_id=27702c39-ebd7-4ea6-a8da-133615a79b98, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/27702c39-ebd7-4ea6-a8da-133615a79b98.jsonl
+[2026-08-30T15:32:33.880Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:32:34.086Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:32:34.086Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:32:34.086Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:32:34.086Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:32:34.108Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:32:34.600Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:37:06.903Z] INFO  [StopHook] Stop hook triggered (session=27702c39-ebd7-4ea6-a8da-133615a79b98)
+[2026-08-30T15:37:06.905Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=15584, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:37:06.905Z] INFO  [StopHook] Hook input — session_id=27702c39-ebd7-4ea6-a8da-133615a79b98, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/27702c39-ebd7-4ea6-a8da-133615a79b98.jsonl
+[2026-08-30T15:37:06.909Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:37:07.040Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:37:07.041Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:37:07.041Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:37:07.042Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:37:07.053Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:37:07.205Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:45:45.860Z] INFO  [StopHook] Stop hook triggered (session=27702c39-ebd7-4ea6-a8da-133615a79b98)
+[2026-08-30T15:45:45.862Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=16084, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:45:45.862Z] INFO  [StopHook] Hook input — session_id=27702c39-ebd7-4ea6-a8da-133615a79b98, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/27702c39-ebd7-4ea6-a8da-133615a79b98.jsonl
+[2026-08-30T15:45:45.867Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:45:45.966Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:45:45.967Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:45:45.967Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:45:45.968Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:45:45.968Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:45:46.091Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:48:48.134Z] INFO  [StopHook] Stop hook triggered (session=27702c39-ebd7-4ea6-a8da-133615a79b98)
+[2026-08-30T15:48:48.143Z] INFO  [RepoProfile] manual-disable read → false (by=manuallyDisabled, pid=16504, cwd=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai, profile=/Users/abdurrehmansiddiqui/Documents/AI-FullStack-Projects/ghost-ai/.jolli/jollimemory/profile.json, raw: userDisabled=undefined manuallyDisabled=false fence=none)
+[2026-08-30T15:48:48.144Z] INFO  [StopHook] Hook input — session_id=27702c39-ebd7-4ea6-a8da-133615a79b98, transcript_path=/Users/abdurrehmansiddiqui/.claude/projects/-Users-abdurrehmansiddiqui-Documents-AI-FullStack-Projects-ghost-ai/27702c39-ebd7-4ea6-a8da-133615a79b98.jsonl
+[2026-08-30T15:48:48.149Z] INFO  [StopHook] Session saved successfully
+[2026-08-30T15:48:48.340Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:48:48.341Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:48:48.341Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:48:48.342Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:48:48.367Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:48:48.621Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-30T15:53:01.286Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-30T15:53:01.286Z] INFO  [SkillProjection] projectActiveSkills: 1 active (1 in registry)
+[2026-08-30T15:53:01.286Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-30T15:53:01.286Z] INFO  [PlanService] detectPlans found 1 plans (1 in registry)
+[2026-08-30T15:53:01.298Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-30T15:53:01.459Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, hermesHook=false, worktreeHooks=true, sessions=4, summaries=2, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=false/undefined, cursor=false/undefined, copilot=false/true, copilotChat=true, cline=false/undefined
