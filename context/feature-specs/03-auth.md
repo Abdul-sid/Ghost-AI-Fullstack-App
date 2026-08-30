@@ -8,9 +8,12 @@ Override Clerk appearance variables using the app’s existing CSS variables. Do
 
 Sign-in and sign-up pages:
 
-- large screens: simple two-panel layout
-- left: compact logo, tagline, short text-only feature list
-- right: centered Clerk form
+- large screens: 50/50 two-panel layout
+- left: raised `bg-surface` panel with a flat brand wash so it reads distinctly
+  against the base background; carries a compact logo lockup, a headline, a
+  short tagline, a three-item feature list (icon + title + one-line
+  description), and a footer line
+- right: centered Clerk form on `bg-base`
 - small screens: form only
 - no gradients
 - no oversized hero sections
@@ -46,6 +49,7 @@ install: @clerk/ui.
 
 ## Check When Done
 
+- typography resolves to the fonts in `context/ui-context.md`
 - `proxy.ts` exists at the root
 - all routes are protected except public auth paths
 - auth pages use CSS variables with no hardcoded colors

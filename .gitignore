@@ -42,3 +42,6 @@ next-env.d.ts
 
 # jolli (local extension state)
 .jolli/
+
+# local issue logs (not for the public repo)
+context/current-issues/
