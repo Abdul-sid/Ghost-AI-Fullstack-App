@@ -3,8 +3,11 @@
 @import "shadcn/tailwind.css";
 
 @theme inline {
-    --font-heading: var(--font-sans);
-    --font-sans: var(--font-sans);
+    /* Typography (context/ui-context.md) — the `--font-geist-*` variables are
+       set on <html> by next/font in app/layout.tsx. */
+    --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+    --font-heading: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+    --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 
     /* shadcn semantic slots */
     --color-sidebar-ring: var(--sidebar-ring);
