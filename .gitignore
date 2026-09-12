@@ -45,3 +45,5 @@ next-env.d.ts
 
 # local issue logs (not for the public repo)
 context/current-issues/
+
+/app/generated/prisma
