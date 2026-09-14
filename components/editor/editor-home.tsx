@@ -10,17 +10,20 @@ import { ProjectSidebar } from "@/components/editor/project-sidebar";
 import { RenameProjectDialog } from "@/components/editor/rename-project-dialog";
 import { Button } from "@/components/ui/button";
 import { useProjectActions } from "@/hooks/use-project-actions";
-import { MOCK_OWNED_PROJECTS, MOCK_SHARED_PROJECTS } from "@/lib/mock-projects";
+import type { Project } from "@/types/project";
+
+interface EditorHomeProps {
+  /** Projects the signed-in user owns, fetched by `app/editor/page.tsx`. */
+  ownedProjects: Project[];
+  /** Projects shared with the signed-in user, fetched by `app/editor/page.tsx`. */
+  sharedProjects: Project[];
+}
 
 /**
  * The `/editor` home screen: the editor chrome, the empty state shown when no
  * workspace is open, and the project dialogs.
- *
- * Project lists are still mock data —
- * `context/feature-specs/07-wire-editor-home.md` replaces them with lists
- * fetched by the server component in `app/editor/page.tsx`.
  */
-export function EditorHome() {
+export function EditorHome({ ownedProjects, sharedProjects }: EditorHomeProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const projectActions = useProjectActions();
 
@@ -28,9 +31,9 @@ export function EditorHome() {
     openDialog,
     targetProject,
     name,
-    slugPreview,
+    roomIdPreview,
     hasNameWarning,
-    nameError,
+    error,
     isSubmitting,
     setName,
     openCreateDialog,
@@ -42,9 +45,12 @@ export function EditorHome() {
     submitDelete,
   } = projectActions;
 
-  /** Dialogs only ever close from the inside — opening goes through the hook. */
+  /**
+   * Dialogs only ever close from the inside — opening goes through the hook.
+   * A request in flight holds its dialog open so its outcome stays visible.
+   */
   const handleOpenChange = (open: boolean) => {
-    if (!open) {
+    if (!open && !isSubmitting) {
       closeDialog();
     }
   };
@@ -60,8 +66,8 @@ export function EditorHome() {
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
         onNewProject={openCreateDialog}
-        projects={MOCK_OWNED_PROJECTS}
-        sharedProjects={MOCK_SHARED_PROJECTS}
+        projects={ownedProjects}
+        sharedProjects={sharedProjects}
         onRenameProject={openRenameDialog}
         onDeleteProject={openDeleteDialog}
       />
@@ -87,9 +93,9 @@ export function EditorHome() {
         onOpenChange={handleOpenChange}
         name={name}
         onNameChange={setName}
-        slugPreview={slugPreview}
+        roomIdPreview={roomIdPreview}
         hasWarning={hasNameWarning}
-        error={nameError}
+        error={error}
         isSubmitting={isSubmitting}
         onSubmit={submitCreate}
       />
@@ -100,6 +106,7 @@ export function EditorHome() {
         project={targetProject}
         name={name}
         onNameChange={setName}
+        error={error}
         isSubmitting={isSubmitting}
         onSubmit={submitRename}
       />
@@ -108,6 +115,7 @@ export function EditorHome() {
         open={openDialog === "delete"}
         onOpenChange={handleOpenChange}
         project={targetProject}
+        error={error}
         isSubmitting={isSubmitting}
         onSubmit={submitDelete}
       />
