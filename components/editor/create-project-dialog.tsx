@@ -87,6 +87,7 @@ export function CreateProjectDialog({
 
         <Input
           id={inputId}
+          disabled={isSubmitting}
           value={name}
           onChange={(event) => onNameChange(event.target.value)}
           placeholder="Payments Platform"

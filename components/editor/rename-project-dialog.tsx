@@ -90,6 +90,7 @@ export function RenameProjectDialog({
 
         <Input
           id={inputId}
+          disabled={isSubmitting}
           ref={inputRef}
           value={name}
           onChange={(event) => onNameChange(event.target.value)}
