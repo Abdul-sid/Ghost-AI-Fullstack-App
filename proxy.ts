@@ -1,5 +1,7 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
+import { unauthenticatedResponse } from "@/lib/api-response";
+
 /**
  * Reduces a configured auth URL to a pathname that can be compared with
  * `request.nextUrl.pathname`.
@@ -42,8 +44,27 @@ function isPublicPath(pathname: string): boolean {
   );
 }
 
+function isApiPath(pathname: string): boolean {
+  return pathname === "/api" || pathname.startsWith("/api/");
+}
+
 export default clerkMiddleware(async (auth, request) => {
-  if (isPublicPath(request.nextUrl.pathname)) {
+  const { pathname } = request.nextUrl;
+
+  if (isPublicPath(pathname)) {
+    return;
+  }
+
+  // `auth.protect()` answers a signed-out non-page request with a 404, but API
+  // clients need a 401 they can act on. API routes stay protected here and
+  // still check auth themselves before touching data.
+  if (isApiPath(pathname)) {
+    const { userId } = await auth();
+
+    if (!userId) {
+      return unauthenticatedResponse();
+    }
+
     return;
   }
 

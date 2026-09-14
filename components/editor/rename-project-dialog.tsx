@@ -2,6 +2,7 @@
 
 import { useId, useRef } from "react";
 
+import { DialogErrorMessage } from "@/components/editor/dialog-error-message";
 import { EditorDialog } from "@/components/editor/editor-dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,6 +16,8 @@ interface RenameProjectDialogProps {
   /** Project name input value, prefilled with the current name on open. */
   name: string;
   onNameChange: (name: string) => void;
+  /** Message from a rejected submit, shown as an error. `null` otherwise. */
+  error: string | null;
   isSubmitting: boolean;
   onSubmit: () => void;
 }
@@ -29,11 +32,13 @@ export function RenameProjectDialog({
   project,
   name,
   onNameChange,
+  error,
   isSubmitting,
   onSubmit,
 }: RenameProjectDialogProps) {
   const formId = useId();
   const inputId = useId();
+  const messageId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
@@ -89,8 +94,12 @@ export function RenameProjectDialog({
           value={name}
           onChange={(event) => onNameChange(event.target.value)}
           autoComplete="off"
+          aria-invalid={Boolean(error)}
+          aria-describedby={error ? messageId : undefined}
           className="h-9 rounded-xl"
         />
+
+        {error ? <DialogErrorMessage id={messageId} message={error} /> : null}
       </form>
     </EditorDialog>
   );

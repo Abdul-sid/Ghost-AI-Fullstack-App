@@ -1,8 +1,9 @@
 "use client";
 
 import { useId } from "react";
-import { CircleAlert, TriangleAlert } from "lucide-react";
+import { TriangleAlert } from "lucide-react";
 
+import { DialogErrorMessage } from "@/components/editor/dialog-error-message";
 import { EditorDialog } from "@/components/editor/editor-dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,8 +15,8 @@ interface CreateProjectDialogProps {
   /** Project name input value. */
   name: string;
   onNameChange: (name: string) => void;
-  /** Slug derived from `name`, re-rendered on every keystroke. */
-  slugPreview: string;
+  /** Room ID derived from `name`, re-rendered on every keystroke. */
+  roomIdPreview: string;
   /** True when the name holds characters the slug cannot keep. */
   hasWarning: boolean;
   /** Message from a rejected submit, shown as an error. `null` when valid. */
@@ -24,13 +25,13 @@ interface CreateProjectDialogProps {
   onSubmit: () => void;
 }
 
-/** Create Project dialog: a name input with a live slug preview. */
+/** Create Project dialog: a name input with a live room ID preview. */
 export function CreateProjectDialog({
   open,
   onOpenChange,
   name,
   onNameChange,
-  slugPreview,
+  roomIdPreview,
   hasWarning,
   error,
   isSubmitting,
@@ -96,25 +97,18 @@ export function CreateProjectDialog({
         />
 
         <p className="flex items-baseline gap-2 text-xs text-copy-muted">
-          <span>Slug preview</span>
+          <span className="shrink-0">Room ID</span>
           <span className="truncate font-mono text-copy-secondary empty:hidden">
-            {slugPreview}
+            {roomIdPreview}
           </span>
-          {slugPreview ? null : (
+          {roomIdPreview ? null : (
             <span className="font-mono text-copy-faint">your-project-name</span>
           )}
         </p>
 
         {/* A rejected submit outranks the typing warning: same row, same id. */}
         {error ? (
-          <p
-            id={messageId}
-            role="alert"
-            className="flex items-start gap-1.5 text-xs text-error"
-          >
-            <CircleAlert className="mt-px h-3.5 w-3.5 shrink-0" aria-hidden />
-            <span>{error}</span>
-          </p>
+          <DialogErrorMessage id={messageId} message={error} />
         ) : hasWarning ? (
           <p
             id={messageId}

@@ -1,5 +1,6 @@
 "use client";
 
+import { DialogErrorMessage } from "@/components/editor/dialog-error-message";
 import { EditorDialog } from "@/components/editor/editor-dialog";
 import { Button } from "@/components/ui/button";
 import type { Project } from "@/types/project";
@@ -9,6 +10,8 @@ interface DeleteProjectDialogProps {
   onOpenChange: (open: boolean) => void;
   /** The project being deleted. `null` while the dialog is closed. */
   project: Project | null;
+  /** Message from a rejected submit, shown as an error. `null` otherwise. */
+  error: string | null;
   isSubmitting: boolean;
   onSubmit: () => void;
 }
@@ -18,6 +21,7 @@ export function DeleteProjectDialog({
   open,
   onOpenChange,
   project,
+  error,
   isSubmitting,
   onSubmit,
 }: DeleteProjectDialogProps) {
@@ -53,6 +57,8 @@ export function DeleteProjectDialog({
           </Button>
         </>
       }
-    />
+    >
+      {error ? <DialogErrorMessage message={error} /> : null}
+    </EditorDialog>
   );
 }
