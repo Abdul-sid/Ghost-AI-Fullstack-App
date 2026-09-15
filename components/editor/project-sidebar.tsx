@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FolderOpen, Pencil, Plus, Trash2, Users, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,8 @@ interface ProjectSidebarProps {
   projects?: Project[];
   /** Projects shared with the current user. Rendered without item actions. */
   sharedProjects?: Project[];
+  /** Room ID of the open workspace; its row is highlighted. */
+  activeRoomId?: string;
   onRenameProject?: (project: Project) => void;
   onDeleteProject?: (project: Project) => void;
   className?: string;
@@ -40,19 +43,40 @@ function EmptyState({ icon: Icon, message }: EmptyStateProps) {
 
 interface ProjectListItemProps {
   project: Project;
+  /** Whether this project is the open workspace. */
+  isActive: boolean;
   /** Owned projects get rename/delete; shared projects get neither. */
   onRename?: (project: Project) => void;
   onDelete?: (project: Project) => void;
 }
 
-function ProjectListItem({ project, onRename, onDelete }: ProjectListItemProps) {
+function ProjectListItem({
+  project,
+  isActive,
+  onRename,
+  onDelete,
+}: ProjectListItemProps) {
   const hasActions = Boolean(onRename || onDelete);
 
   return (
-    <li className="group/item flex items-center gap-1 rounded-xl px-2 py-1.5 transition-colors hover:bg-subtle">
-      <span className="min-w-0 flex-1 truncate text-sm text-copy-secondary">
+    <li
+      className={cn(
+        "group/item flex items-center gap-1 rounded-xl px-2 py-1.5 transition-colors",
+        isActive ? "bg-accent-dim" : "hover:bg-subtle"
+      )}
+    >
+      <Link
+        href={`/editor/${project.roomId}`}
+        aria-current={isActive ? "page" : undefined}
+        className={cn(
+          "min-w-0 flex-1 truncate rounded-md text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring/50",
+          isActive
+            ? "font-medium text-brand"
+            : "text-copy-secondary hover:text-copy-primary"
+        )}
+      >
         {project.name}
-      </span>
+      </Link>
 
       {hasActions ? (
         <div className="flex shrink-0 items-center gap-0.5 transition-opacity sm:opacity-0 sm:group-focus-within/item:opacity-100 sm:group-hover/item:opacity-100">
@@ -89,6 +113,7 @@ interface ProjectListProps {
   projects: Project[];
   emptyIcon: React.ComponentType<{ className?: string }>;
   emptyMessage: string;
+  activeRoomId?: string;
   onRename?: (project: Project) => void;
   onDelete?: (project: Project) => void;
 }
@@ -97,6 +122,7 @@ function ProjectList({
   projects,
   emptyIcon,
   emptyMessage,
+  activeRoomId,
   onRename,
   onDelete,
 }: ProjectListProps) {
@@ -110,6 +136,7 @@ function ProjectList({
         <ProjectListItem
           key={project.id}
           project={project}
+          isActive={project.roomId === activeRoomId}
           onRename={onRename}
           onDelete={onDelete}
         />
@@ -130,6 +157,7 @@ export function ProjectSidebar({
   onNewProject,
   projects = [],
   sharedProjects = [],
+  activeRoomId,
   onRenameProject,
   onDeleteProject,
   className,
@@ -180,6 +208,7 @@ export function ProjectSidebar({
                 projects={projects}
                 emptyIcon={FolderOpen}
                 emptyMessage="No projects yet."
+                activeRoomId={activeRoomId}
                 onRename={onRenameProject}
                 onDelete={onDeleteProject}
               />
@@ -192,6 +221,7 @@ export function ProjectSidebar({
                 projects={sharedProjects}
                 emptyIcon={Users}
                 emptyMessage="No shared projects yet."
+                activeRoomId={activeRoomId}
               />
             </ScrollArea>
           </TabsContent>
