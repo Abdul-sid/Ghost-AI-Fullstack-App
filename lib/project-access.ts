@@ -1,6 +1,9 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
 
-import { Prisma } from "@/app/generated/prisma/client";
+import {
+  Prisma,
+  type Project as ProjectRecord,
+} from "@/app/generated/prisma/client";
 import { prisma } from "@/lib/prisma";
 
 /**
@@ -31,6 +34,58 @@ export async function getCurrentIdentity(): Promise<CurrentIdentity | null> {
   );
 
   return { userId: user.id, email: primaryEmail?.emailAddress ?? null };
+}
+
+export type ProjectRole = "owner" | "collaborator";
+
+export interface ProjectAccess {
+  project: ProjectRecord;
+  /** How the caller reaches the project. Owners take precedence. */
+  role: ProjectRole;
+}
+
+/**
+ * The project with ID `projectId` together with the caller's role on it, or
+ * `null` when the caller is neither its owner nor a collaborator. A project
+ * that does not exist is also `null`, so callers cannot tell the two apart —
+ * which keeps project IDs from being probed.
+ *
+ * Collaborator emails are matched case-insensitively, as in
+ * `listSharedProjects`, so a user sees the same projects in the sidebar that
+ * they can open.
+ */
+export async function getProjectAccess(
+  projectId: string,
+  identity: CurrentIdentity,
+): Promise<ProjectAccess | null> {
+  const { userId, email } = identity;
+
+  const project = await prisma.project.findFirst({
+    where: {
+      id: projectId,
+      OR: [
+        { ownerId: userId },
+        ...(email
+          ? [
+              {
+                collaborators: {
+                  some: { email: { equals: email, mode: "insensitive" as const } },
+                },
+              },
+            ]
+          : []),
+      ],
+    },
+  });
+
+  if (!project) {
+    return null;
+  }
+
+  return {
+    project,
+    role: project.ownerId === userId ? "owner" : "collaborator",
+  };
 }
 
 export type ProjectOwnership = "owner" | "forbidden" | "not-found";
