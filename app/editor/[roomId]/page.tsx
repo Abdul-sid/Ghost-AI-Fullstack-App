@@ -42,6 +42,7 @@ export default async function EditorWorkspacePage({
   return (
     <EditorWorkspace
       project={toProjectSummary(access.project)}
+      role={access.role}
       ownedProjects={ownedProjects.map(toProjectSummary)}
       sharedProjects={sharedProjects.map(toProjectSummary)}
     />

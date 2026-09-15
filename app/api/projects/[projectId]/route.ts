@@ -1,34 +1,17 @@
 import { readJsonBody } from "@/lib/api-request";
 import { errorResponse, unauthenticatedResponse } from "@/lib/api-response";
 import {
-  checkProjectOwnership,
   getCurrentUserId,
   isRecordNotFoundError,
 } from "@/lib/project-access";
+import {
+  ownerOnlyError,
+  PROJECT_NOT_FOUND_MESSAGE,
+} from "@/lib/project-guards";
 import { parseRenameProjectInput } from "@/lib/project-input";
 import { prisma } from "@/lib/prisma";
 
 type ProjectRouteContext = RouteContext<"/api/projects/[projectId]">;
-
-const PROJECT_NOT_FOUND_MESSAGE = "Project not found.";
-
-/** Maps a non-owner outcome to its response, or `null` when the caller owns it. */
-async function ownerOnlyError(
-  projectId: string,
-  userId: string,
-): Promise<Response | null> {
-  const ownership = await checkProjectOwnership(projectId, userId);
-
-  if (ownership === "not-found") {
-    return errorResponse(404, PROJECT_NOT_FOUND_MESSAGE);
-  }
-
-  if (ownership === "forbidden") {
-    return errorResponse(403, "Only the project owner can do this.");
-  }
-
-  return null;
-}
 
 /** Renames a project. Owner only. */
 export async function PATCH(request: Request, ctx: ProjectRouteContext) {
