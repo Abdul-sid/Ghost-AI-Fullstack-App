@@ -19,6 +19,8 @@ export interface WorkspaceNavbarProps {
   isAiSidebarOpen: boolean;
   /** Toggles the AI sidebar. */
   onToggleAiSidebar: () => void;
+  /** Opens the share dialog. */
+  onOpenShare: () => void;
 }
 
 interface EditorNavbarProps {
@@ -77,10 +79,12 @@ export function EditorNavbar({
       <div className="flex flex-1 items-center justify-end gap-2">
         {workspace ? (
           <>
-            {/* Sharing behavior arrives with `09-share-dialog.md`. */}
             <Button
               variant="outline"
               className="rounded-xl border-surface-border text-copy-secondary hover:bg-subtle hover:text-copy-primary"
+              onClick={workspace.onOpenShare}
+              aria-haspopup="dialog"
+              aria-label="Share project"
             >
               <Share2 className="h-4 w-4" />
               <span className="hidden sm:inline">Share</span>

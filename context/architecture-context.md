@@ -38,6 +38,9 @@
 - Liveblocks room tokens are issued only after verifying project membership.
 - A project's ID is its Liveblocks room ID and its `/editor/[roomId]` URL segment — one identifier, never mapped. It is the slugified name plus a short random suffix, chosen when the project is created and never regenerated on rename.
 - Shared projects are resolved by matching the signed-in user's primary email against `ProjectCollaborator.email`.
+- Collaborators are invited by email and stored trimmed and lowercased. Lookups stay case-insensitive so rows written before normalization still match.
+- Only the owner can invite or remove collaborators; the owner and collaborators can list them. Both rules are enforced in the API, not just the UI.
+- There is no local user table. Collaborator display names and avatars are read from the Clerk Backend API by email at request time. An email with no Clerk user is shown as the email alone.
 
 ## Starter System Designs
 

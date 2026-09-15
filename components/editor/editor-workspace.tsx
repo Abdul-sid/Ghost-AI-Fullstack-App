@@ -6,14 +6,19 @@ import { Sparkles, SquareDashed, X } from "lucide-react";
 import { EditorNavbar } from "@/components/editor/editor-navbar";
 import { ProjectDialogs } from "@/components/editor/project-dialogs";
 import { ProjectSidebar } from "@/components/editor/project-sidebar";
+import { ShareDialog } from "@/components/editor/share-dialog";
 import { Button } from "@/components/ui/button";
 import { useProjectActions } from "@/hooks/use-project-actions";
+import { useShareDialog } from "@/hooks/use-share-dialog";
+import type { ProjectRole } from "@/lib/project-access";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/types/project";
 
 interface EditorWorkspaceProps {
   /** The open project, already access-checked by `app/editor/[roomId]/page.tsx`. */
   project: Project;
+  /** The signed-in user's role on `project`, decided on the server. */
+  role: ProjectRole;
   /** Projects the signed-in user owns. */
   ownedProjects: Project[];
   /** Projects shared with the signed-in user. */
@@ -27,12 +32,14 @@ interface EditorWorkspaceProps {
  */
 export function EditorWorkspace({
   project,
+  role,
   ownedProjects,
   sharedProjects,
 }: EditorWorkspaceProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAiSidebarOpen, setIsAiSidebarOpen] = useState(false);
   const projectActions = useProjectActions();
+  const shareDialog = useShareDialog(project);
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden">
@@ -43,6 +50,7 @@ export function EditorWorkspace({
           projectName: project.name,
           isAiSidebarOpen,
           onToggleAiSidebar: () => setIsAiSidebarOpen((open) => !open),
+          onOpenShare: shareDialog.open,
         }}
       />
 
@@ -101,6 +109,12 @@ export function EditorWorkspace({
       </aside>
 
       <ProjectDialogs actions={projectActions} />
+
+      <ShareDialog
+        projectName={project.name}
+        canManageAccess={role === "owner"}
+        actions={shareDialog}
+      />
     </div>
   );
 }
